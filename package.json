@@ -1,0 +1,30 @@
+{
+  "name": "react-native-animated-map-clusters",
+  "version": "0.1.1",
+  "description": "Module that adds map clustering with smooth marker's movement",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/volga-volga/react-native-animated-map-clusters.git"
+  },
+  "keywords": [
+    "react-native",
+    "map",
+    "cluster",
+    "animations"
+  ],
+  "peerDependencies": {
+    "react": ">=16.6.1",
+    "react-native": ">=0.57",
+    "react-native-maps": ">=0.22.1"
+  },
+  "author": "Nikita Sirotkin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/volga-volga/react-native-animated-map-clusters/issues"
+  },
+  "homepage": "https://github.com/volga-volga/react-native-animated-map-clusters#readme"
+}
