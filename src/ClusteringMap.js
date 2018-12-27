@@ -235,6 +235,7 @@ export default class ClusteringMap extends React.Component<Props, State> {
         key={i}
         onPress={this.handleMarkerPress}
         ref={this.setMarker(i)}
+        style={[markerComp.props.style, { zIndex: i }]}
       />
     );
   }

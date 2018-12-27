@@ -1,6 +1,6 @@
 {
   "name": "react-native-animated-map-clusters",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Module that adds map clustering with smooth marker's movement",
   "main": "index.js",
   "scripts": {
