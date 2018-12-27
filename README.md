@@ -77,12 +77,17 @@ onPress prop for marker. Receive marker's coordinate and index in children array
 ref prop for MapView
 
 - **children**: `Marker | Array<Marker>`
-
 Only Marker's supported now.
 
-**Note:** 
-For forwarding ref prop in marker use innerRef prop
+- **showClusters**: `boolean`
+Set true, if you want to show clusters components. Otherwise markers will be merged without count indicator.
 
+- **renderCluster**: `(cluster: Cluster, props: Props) => ReactNode,`
+Method for render custom clusters.
+
+**Note:** 
+For forwarding ref prop in marker use innerRef prop.
+You should to use cluster component which will be greater then marker.
 
 ## Functions
 

@@ -1,7 +1,11 @@
 // @flow
 import { Dimensions } from 'react-native';
 import { Region } from 'react-native-maps';
-import type { Point } from './types';
+import type {
+  Cluster,
+  InnerCluster,
+  Point,
+} from './types';
 
 const { height, width } = Dimensions.get('window');
 
@@ -60,4 +64,17 @@ export function calcRegionForMarkers(markers: Array<Point>): Region {
   region.latitudeDelta = Math.max(minLatDelta, region.latitudeDelta);
   region.longitudeDelta = Math.max(minLongDelta, region.longitudeDelta);
   return region;
+}
+
+export function calcCommonMarkersCount(first: InnerCluster, second: InnerCluster): number {
+  let commonMarkersCount = 0;
+  for (let x = 0; x < first.points.length; x++) {
+    for (let y = 0; y < second.points.length; y++) {
+      if (first.points[x] === second.points[y]) {
+        ++commonMarkersCount;
+        break;
+      }
+    }
+  }
+  return commonMarkersCount;
 }
